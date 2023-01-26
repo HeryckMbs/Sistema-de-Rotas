@@ -1,0 +1,17 @@
+{
+    "name": "heryck/projeto-php",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "Heryck",
+            "email": "heryckmota@gmail.com"
+        }
+    ],
+    "require": {
+        "league/plates": "^3.5"
+    }
+}
