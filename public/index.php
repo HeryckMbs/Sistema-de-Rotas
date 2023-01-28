@@ -1,13 +1,15 @@
 <?php
 require '../vendor/autoload.php';
 require '../routes/router.php';
+define('ROOT_PATH', dirname(__FILE__,2));
+
 function dd($params){
     echo '<pre>';
     print_r($params);
     echo '</pre>';
 }
 try{
-
+    include_once(ROOT_PATH ."\config\config.php");
     $uri = parse_url($_SERVER["REQUEST_URI"])["path"];
     $request = $_SERVER['REQUEST_METHOD'];
     

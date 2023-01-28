@@ -25,9 +25,12 @@ $routes = [
     'GET' => [
         '/' => fn()=> load('HomeController','teste'),
         '/contact' => fn()=> load('ContactController','teste'),
+        '/user' => fn()=> load('UserController','index'),
     ],
     'POST' => [
         '/contact' => fn()=> load('ContactController','store'),
+        '/userSave' => fn()=> load('UserController','store'),
+
     ],
     'DELETE' =>[
 
